@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { NotifierService } from 'angular-notifier';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,9 +15,9 @@ export class AppComponent implements OnInit {
   username: FormControl;
   password: FormControl;
 
-  public constructor( notifier: NotifierService ) {
-		this.notifier = notifier;
-	}
+  public constructor(notifier: NotifierService) {
+    this.notifier = notifier;
+  }
 
   ngOnInit() {
     this.createForm();
@@ -32,12 +31,11 @@ export class AppComponent implements OnInit {
   }
 
   connexion() {
-    if(this.connexionForm.value.username === "user" || "User" && this.connexionForm.value.password === "user"){
-      this.notifier.notify( 'success', 'Connexion réussi !');
+    if (this.connexionForm.value.username === "user" || "User" && this.connexionForm.value.password === "user") {
+      this.notifier.notify('success', 'Login successful !');
     }
-    else{
-      this.notifier.notify( 'error', 'Connexion refusée !');
-
+    else {
+      this.notifier.notify('error', 'Username or Password is wrong !');
     }
     this.connexionForm.reset();
   }

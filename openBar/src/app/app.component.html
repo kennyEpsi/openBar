@@ -19,7 +19,7 @@
         </div> -->
     </nav>
 </header>
-<div class="main container col-lg-4 col-md-4 col-sm-12" style="padding-top: 150px">
+<div class="main container col-lg-4 col-md-6 col-sm-12" style="padding-top: 150px">
     <form [formGroup]="connexionForm" (ngSubmit)="connexion()">
         <section class="form-elegant">
             <div class="card">
@@ -38,11 +38,13 @@
                                 class="blue-text ml-1">Password?</a></p>
                     </div>
                     <div class="text-center mb-3">
-                        <button type="submit" class="btn winter-neva-gradient btn-block z-depth-1" style="border-radius: 40px;" (click)="showNotification( 'success', 'Notification successfully opened.')">Sign in</button>
+                        <button type="submit" class="btn winter-neva-gradient btn-block z-depth-1"
+                            style="border-radius: 40px;">Sign in</button>
                     </div>
                 </div>
                 <div class="modal-footer mx-5 pt-3 mb-1">
-                    <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#" class="blue-text ml-1">Sign Up</a></p>
+                    <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#"
+                            class="blue-text ml-1">Sign Up</a></p>
                 </div>
             </div>
         </section>

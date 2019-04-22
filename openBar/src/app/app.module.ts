@@ -3,25 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotifierModule, NotifierOptions } from 'angular-notifier';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const customNotifierOptions: NotifierOptions = {
   position: {
-		horizontal: {
-			position: 'left',
-			distance: 12
-		},
-		vertical: {
-			position: 'bottom',
-			distance: 12,
-			gap: 10
-		}
-	},
+    horizontal: {
+      position: 'right',
+      distance: 12
+    },
+    vertical: {
+      position: 'bottom',
+      distance: 12,
+      gap: 10
+    }
+  },
   theme: 'material',
   behaviour: {
-    autoHide: 5000,
+    autoHide: 2000,
     onClick: 'hide',
     onMouseover: 'pauseAutoHide',
     showDismissButton: true,
@@ -35,7 +36,7 @@ const customNotifierOptions: NotifierOptions = {
       easing: 'ease'
     },
     hide: {
-      preset: 'fade',
+      preset: 'slide',
       speed: 300,
       easing: 'ease',
       offset: 50
@@ -51,14 +52,16 @@ const customNotifierOptions: NotifierOptions = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     NotifierModule.withConfig(customNotifierOptions)
-    ],
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
