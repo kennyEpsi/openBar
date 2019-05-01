@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'app-root',
@@ -10,33 +8,17 @@ import { NotifierService } from 'angular-notifier';
 
 export class AppComponent implements OnInit {
 
-  private notifier: NotifierService;
-  connexionForm: FormGroup;
-  username: FormControl;
-  password: FormControl;
-
-  public constructor(notifier: NotifierService) {
-    this.notifier = notifier;
+  public constructor() {
   }
 
   ngOnInit() {
-    this.createForm();
   }
 
-  createForm() {
-    this.connexionForm = new FormGroup({
-      username: new FormControl('', Validators.required),
-      password: new FormControl('', Validators.required),
-    });
+  openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
   }
 
-  connexion() {
-    if (this.connexionForm.value.username === "user" || "User" && this.connexionForm.value.password === "user") {
-      this.notifier.notify('success', 'Login successful !');
-    }
-    else {
-      this.notifier.notify('error', 'Username or Password is wrong !');
-    }
-    this.connexionForm.reset();
+  closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
   }
 }

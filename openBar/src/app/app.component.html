@@ -1,54 +1,17 @@
 <header>
     <nav class="navbar navbar-light bg-white navbar-1">
+        <div id="mySidenav" class="sidenav">
+            <a class="closebtn" (click)="closeNav()">&times;</a>
+            <a href="#"><i class="fas fa-pizza-slice"></i> Pizza</a>
+            <a href="#"><i class="fas fa-hamburger"></i> Burger</a>
+            <a href="#"><i class="fas fa-salad"></i> Salade</a>
+            <a href="#"><i class="fas fa-meat"></i> Viande</a>
+            <a href="#"><i class="fas fa-fish"></i> Poisson</a>
+            <a href="#"><i class="fas fa-cocktail"></i> Boisson</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
         <img class="nav navbar-nav mx-auto" src="assets/img/openBarSmall.png">
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
-            aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent15">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-            </ul>
-        </div> -->
     </nav>
 </header>
-<div class="main container col-lg-4 col-md-6 col-sm-12" style="padding-top: 150px">
-    <form [formGroup]="connexionForm" (ngSubmit)="connexion()">
-        <section class="form-elegant">
-            <div class="card">
-                <div class="card-body mx-4">
-                    <div class="text-center">
-                        <h3 class="dark-grey-text mb-5"><strong>Sign in</strong></h3>
-                    </div>
-                    <div class="md-form">
-                        <input type="text" class="form-control" formControlName="username" required
-                            placeholder="Username">
-                    </div>
-                    <div class="md-form pb-3">
-                        <input type="password" class="form-control" formControlName="password" required
-                            placeholder="Password">
-                        <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#"
-                                class="blue-text ml-1">Password?</a></p>
-                    </div>
-                    <div class="text-center mb-3">
-                        <button type="submit" class="btn winter-neva-gradient btn-block z-depth-1"
-                            style="border-radius: 40px;">Sign in</button>
-                    </div>
-                </div>
-                <div class="modal-footer mx-5 pt-3 mb-1">
-                    <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#"
-                            class="blue-text ml-1">Sign Up</a></p>
-                </div>
-            </div>
-        </section>
-    </form>
-</div>
-<notifier-container></notifier-container>
+<app-login></app-login>
 <router-outlet></router-outlet>
