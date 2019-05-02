@@ -1,18 +1,18 @@
-<div class="card-group">
-  <div class="col-sm-4 text-center my-4" *ngFor="let viande of viandes">
-    <div class="card" style="padding: 10px;">
-      <img src="{{viande.img}}" class="card-img-top" alt="{{viande.name}}">
-      <div class="card-body">
-        <h4 class="card-title">
-          <strong>
-            <a href="">{{viande.name}}</a>
-          </strong>
-        </h4>
-        <p class="card-text" style="text-align: justify;">{{viande.description}}</p>
-        <div class="card-footer">
-          <span>
-            <strong>{{viande.price}}€</strong>
-          </span>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let viande of viandes">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top img-thumbnail" alt="{{viande.img}}" style="min-height: 230px; width: 100%; display: block;"
+            src="{{viande.img}}">
+          <div class="card-body">
+            <p class="card-text" style="text-align: justify;height: 100%; width: 100%;">{{viande.description}}</p>
+            <div class="card-footer" style="text-align: center">
+              <span>
+                <strong>{{viande.price}}€</strong>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

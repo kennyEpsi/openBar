@@ -1,18 +1,18 @@
-<div class="card-group">
-  <div class="col-sm-4 text-center my-4" *ngFor="let salade of salades">
-    <div class="card" style="padding: 10px;">
-      <img src="{{salade.img}}" class="card-img-top" alt="{{salade.name}}">
-      <div class="card-body">
-        <h4 class="card-title">
-          <strong>
-            <a href="">{{salade.name}}</a>
-          </strong>
-        </h4>
-        <p class="card-text" style="text-align: justify;">{{salade.description}}</p>
-        <div class="card-footer">
-          <span>
-            <strong>{{salade.price}}€</strong>
-          </span>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let salade of salades">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top img-thumbnail" alt="{{salade.img}}" style="min-height: 230px; width: 100%"
+            src="{{salade.img}}">
+          <div class="card-body">
+            <p class="card-text" style="text-align: justify;height: 100%; width: 100%;">{{salade.description}}</p>
+            <div class="card-footer" style="text-align: center">
+              <span>
+                <strong>{{salade.price}}€</strong>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

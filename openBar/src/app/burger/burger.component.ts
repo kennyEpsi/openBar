@@ -18,6 +18,6 @@ export class BurgerComponent implements OnInit {
   }
 
   getBurgers(): void {
-    this.burgers = this.openBarService.getBurgers();
+    this.openBarService.getBurgers().subscribe(burgers => this.burgers = burgers);
   }
 }

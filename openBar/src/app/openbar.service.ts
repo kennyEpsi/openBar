@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Menu } from './menu';
 import { SALADES } from './mock/mock-salade';
 import { VIANDES } from './mock/mock-viande';
@@ -16,28 +17,28 @@ export class OpenbarService {
 
   constructor() { }
 
-  getSalades(): Menu[] {
-    return SALADES;
+  getSalades(): Observable<Menu[]> {
+    return of(SALADES);
   }
 
-  getViandes(): Menu[] {
-    return VIANDES;
+  getViandes(): Observable<Menu[]> {
+    return of(VIANDES);
   }
 
-  getPoissons(): Menu[] {
-    return POISSONS;
+  getPoissons(): Observable<Menu[]> {
+    return of(POISSONS);
   }
 
-  getBurgers(): Menu[] {
-    return BURGERS;
+  getBurgers(): Observable<Menu[]> {
+    return of(BURGERS);
   }
 
-  getPizzas(): Menu[] {
-    return PIZZAS;
+  getPizzas(): Observable<Menu[]> {
+    return of(PIZZAS);
   }
 
-  getBoissons(): Menu[] {
-    return BOISSONS;
+  getBoissons(): Observable<Menu[]> {
+    return of(BOISSONS);
   }
 
   getIsConnected(): boolean {

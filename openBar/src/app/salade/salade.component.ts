@@ -18,7 +18,7 @@ export class SaladeComponent implements OnInit {
   }
 
   getSalades(): void {
-    this.salades = this.openBarService.getSalades();
+    this.openBarService.getSalades().subscribe(salades => this.salades = salades);;
   }
 
 }

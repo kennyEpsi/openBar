@@ -18,6 +18,6 @@ export class ViandeComponent implements OnInit {
   }
 
   getViandes(): void {
-    this.viandes = this.openBarService.getViandes();
+    this.openBarService.getViandes().subscribe(viandes => this.viandes = viandes);
   }
 }

@@ -1,18 +1,18 @@
-<div class="card-group">
-  <div class="col-sm-4 text-center my-4" *ngFor="let boisson of boissons">
-    <div class="card" style="padding: 10px;">
-      <img src="{{boisson.img}}" class="card-img-top" alt="{{boisson.name}}">
-      <div class="card-body">
-        <h4 class="card-title">
-          <strong>
-            <a href="">{{boisson.name}}</a>
-          </strong>
-        </h4>
-        <p class="card-text" style="text-align: justify;">{{boisson.description}}</p>
-        <div class="card-footer">
-          <span>
-            <strong>{{boisson.price}}€</strong>
-          </span>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let boisson of boissons">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top img-thumbnail" alt="{{boisson.img}}" style="min-height: 230px; width: 100%; display: block;"
+            src="{{boisson.img}}">
+          <div class="card-body">
+            <p class="card-text" style="text-align: justify;height: 100%; width: 100%;">{{boisson.description}}</p>
+            <div class="card-footer" style="text-align: center">
+              <span>
+                <strong>{{boisson.price}}€</strong>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

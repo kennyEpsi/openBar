@@ -18,6 +18,6 @@ export class PizzaComponent implements OnInit {
   }
 
   getPizzas(): void {
-    this.pizzas = this.openBarService.getPizzas();
+    this.openBarService.getPizzas().subscribe(pizzas => this.pizzas = pizzas);
   }
 }

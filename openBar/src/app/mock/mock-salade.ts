@@ -18,7 +18,7 @@ export const SALADES: Menu[] = [
     {
         id: 3,
         name: 'Salade Lyonnaise',
-        description: 'La salade Lyonnaise est composée de feuilles de salade verte, salade frisée, mâche ou dents de lion (variété de pissenlit), des lardons fumés frits ou des foies de volaille, des croûtons de pain sec dorés, un œuf poché ou œuf mollet, sauce vinaigrette (huile de noix, vinaigre balsamique ou de vin...), du persil',
+        description: 'La salade Lyonnaise est composée de salade verte, salade frisée ou mâche, des lardons fumés frits ou des foies de volaille, des croûtons de pain sec dorés, un œuf poché ou œuf mollet, sauce vinaigrette (huile de noix, vinaigre balsamique ou de vin...), du persil',
         price: 12.99,
         img: './assets/img/salade/salade_lyonnaise.jpg',
     },
@@ -31,10 +31,10 @@ export const SALADES: Menu[] = [
     },
     {
         id: 5,
-        name: 'Salade Périgourdine',
-        description: 'La salade Périgourdine est composée de quelques feuilles de salade frisée, feuille de chêne, pourpier ou mâche, rondelles de pommes de terre, haricots vert, tomates en tranche ou tomates cerises,confit de canard,gésiers de canard frais ou confits,magret de canard séché émincé,jambon cru en tranche,foie gras de canard,décoration avec des croûtons, maïs, œuf de caille, noix, pignons, raisins blancs secs, lardons, champignons,assaisonnement: huile de noix, vinaigre balsamique, de xérès ou de framboise, moutarde traditionnelle ou à l\'ancienne, sel et poivre.',
+        name: 'Salade Océane',
+        description: 'La salade Océane est composée de salade frisée, moules cuites, crevettes roses cuites, poivron rouge, poivron vert, poivron jaune, un filet d\'huile d\'holive, un trait de jus de citron avec du sel et du poivre',
         price: 8,
-        img: './assets/img/salade/salade_perigourdine.jpg',
+        img: './assets/img/salade/salade_oceane.jpeg',
     },
     {
         id: 6,
