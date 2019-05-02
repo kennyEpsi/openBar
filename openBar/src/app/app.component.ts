@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OpenbarService } from './openbar.service'
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class AppComponent implements OnInit {
 
-  public constructor() {
+  public constructor(private openBarService: OpenbarService) {
   }
 
   ngOnInit() {
@@ -20,5 +21,9 @@ export class AppComponent implements OnInit {
 
   closeNav() {
     document.getElementById("mySidenav").style.width = "0px";
+  }
+
+  isShowSideNav() {
+    return this.openBarService.getIsConnected();
   }
 }

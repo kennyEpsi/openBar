@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MENUS } from '../mock-menu';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,11 +7,8 @@ import { MENUS } from '../mock-menu';
 })
 export class DashboardComponent implements OnInit {
 
-  menus = MENUS;
-
   constructor() { }
 
   ngOnInit() {
   }
-
 }

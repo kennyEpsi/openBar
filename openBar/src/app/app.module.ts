@@ -7,6 +7,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotifierModule, NotifierOptions } from 'angular-notifier';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { SaladeComponent } from './salade/salade.component';
+import { BurgerComponent } from './burger/burger.component';
+import { PizzaComponent } from './pizza/pizza.component';
+import { ViandeComponent } from './viande/viande.component';
+import { PoissonComponent } from './poisson/poisson.component';
+import { BoissonComponent } from './boisson/boisson.component';
 
 
 const customNotifierOptions: NotifierOptions = {
@@ -55,7 +61,13 @@ const customNotifierOptions: NotifierOptions = {
   declarations: [
     AppComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    SaladeComponent,
+    BurgerComponent,
+    PizzaComponent,
+    ViandeComponent,
+    PoissonComponent,
+    BoissonComponent
   ],
   imports: [
     BrowserModule,

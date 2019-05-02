@@ -1,0 +1,20 @@
+<div class="card-group">
+  <div class="col-sm-4 text-center my-4" *ngFor="let burger of burgers">
+    <div class="card" style="padding: 10px;">
+      <img src="{{burger.img}}" class="card-img-top" alt="{{burger.name}}">
+      <div class="card-body">
+        <h4 class="card-title">
+          <strong>
+            <a href="">{{burger.name}}</a>
+          </strong>
+        </h4>
+        <p class="card-text" style="text-align: justify;">{{burger.description}}</p>
+        <div class="card-footer">
+          <span>
+            <strong>{{burger.price}}€</strong>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
-import { Menu } from './menu';
+import { Menu } from '../menu';
 
-export const MENUS: Menu[] = [
+export const SALADES: Menu[] = [
     {
         id: 1,
         name: 'Salade Caesar',

@@ -1,0 +1,20 @@
+<div class="card-group">
+  <div class="col-sm-4 text-center my-4" *ngFor="let viande of viandes">
+    <div class="card" style="padding: 10px;">
+      <img src="{{viande.img}}" class="card-img-top" alt="{{viande.name}}">
+      <div class="card-body">
+        <h4 class="card-title">
+          <strong>
+            <a href="">{{viande.name}}</a>
+          </strong>
+        </h4>
+        <p class="card-text" style="text-align: justify;">{{viande.description}}</p>
+        <div class="card-footer">
+          <span>
+            <strong>{{viande.price}}€</strong>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

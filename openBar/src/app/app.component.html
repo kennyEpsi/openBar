@@ -9,8 +9,9 @@
             <a href="#"><i class="fas fa-fish"></i> Poisson</a>
             <a href="#"><i class="fas fa-cocktail"></i> Boisson</a>
         </div>
-        <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer" (click)="openNav()" [hidden]="!isShowSideNav()">&#9776;</span>
         <img class="nav navbar-nav mx-auto" src="assets/img/openBarSmall.png">
+        <i class="fas fa-power-off" [hidden]="!isShowSideNav()"></i>    
     </nav>
 </header>
 <app-login></app-login>
