@@ -2,17 +2,20 @@
     <nav class="navbar navbar-light bg-white navbar-1">
         <div id="mySidenav" class="sidenav">
             <a class="closebtn" (click)="closeNav()">&times;</a>
-            <a href="#"><i class="fas fa-pizza-slice"></i> Pizza</a>
-            <a href="#"><i class="fas fa-hamburger"></i> Burger</a>
-            <a href="#"><i class="fas fa-salad"></i> Salade</a>
-            <a href="#"><i class="fas fa-meat"></i> Viande</a>
-            <a href="#"><i class="fas fa-fish"></i> Poisson</a>
-            <a href="#"><i class="fas fa-cocktail"></i> Boisson</a>
+            <a routerLink="/dashboard" (click)="openBarService.closeNav()"><i class="fas fa-user-circle"></i> Profil</a>
+            <a routerLink="/pizzas" (click)="openBarService.closeNav()"><i class="fas fa-pizza-slice"></i> Pizza</a>
+            <a routerLink="/burgers" (click)="openBarService.closeNav()"><i class="fas fa-hamburger"></i> Burger</a>
+            <a routerLink="/salades" (click)="openBarService.closeNav()"><i class="fas fa-salad"></i> Salade</a>
+            <a routerLink="/viandes" (click)="openBarService.closeNav()"><i class="fas fa-meat"></i> Viande</a>
+            <a routerLink="/poissons" (click)="openBarService.closeNav()"><i class="fas fa-fish"></i> Poisson</a>
+            <a routerLink="/boissons" (click)="openBarService.closeNav()"><i class="fas fa-cocktail"></i> Boisson</a>
         </div>
-        <span style="font-size:30px;cursor:pointer" (click)="openNav()" [hidden]="!isShowSideNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer" (click)="openNav()"
+            [hidden]="!openBarService.isConnected">&#9776;</span>
         <img class="nav navbar-nav mx-auto" src="assets/img/openBarSmall.png">
-        <i class="fas fa-power-off" [hidden]="!isShowSideNav()"></i>    
+        <a routerLink="/login"><i class="fas fa-power-off" [hidden]="!openBarService.isConnected"
+                (click)="logOut()"></i></a>
     </nav>
 </header>
-<app-login></app-login>
 <router-outlet></router-outlet>
+<notifier-container></notifier-container>

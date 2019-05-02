@@ -15,6 +15,7 @@ export class PizzaComponent implements OnInit {
 
   ngOnInit() {
     this.getPizzas();
+    this.openBarService.setIsConnected(true);
   }
 
   getPizzas(): void {

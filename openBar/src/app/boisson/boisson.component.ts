@@ -15,6 +15,7 @@ export class BoissonComponent implements OnInit {
 
   ngOnInit() {
     this.getBoissons();
+    this.openBarService.setIsConnected(true);
   }
 
   getBoissons(): void {

@@ -15,6 +15,7 @@ export class SaladeComponent implements OnInit {
 
   ngOnInit() {
     this.getSalades();
+    this.openBarService.setIsConnected(true);
   }
 
   getSalades(): void {

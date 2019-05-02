@@ -15,6 +15,7 @@ export class ViandeComponent implements OnInit {
 
   ngOnInit() {
     this.getViandes();
+    this.openBarService.setIsConnected(true);
   }
 
   getViandes(): void {

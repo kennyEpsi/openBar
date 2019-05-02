@@ -15,6 +15,7 @@ export class PoissonComponent implements OnInit {
 
   ngOnInit() {
     this.getPoissons();
+    this.openBarService.setIsConnected(true);
   }
 
   getPoissons(): void {

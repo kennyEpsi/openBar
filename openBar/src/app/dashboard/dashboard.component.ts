@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OpenbarService } from '../openbar.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private openBarService: OpenbarService) { }
 
   ngOnInit() {
+    this.openBarService.setIsConnected(true);
   }
 }

@@ -16,14 +16,14 @@ export class AppComponent implements OnInit {
   }
 
   openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    this.openBarService.openNav();
   }
 
   closeNav() {
-    document.getElementById("mySidenav").style.width = "0px";
+    this.openBarService.closeNav();
   }
 
-  isShowSideNav() {
-    return this.openBarService.getIsConnected();
+  logOut() {
+    this.openBarService.setIsConnected(false);
   }
 }

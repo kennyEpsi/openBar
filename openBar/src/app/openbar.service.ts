@@ -41,12 +41,16 @@ export class OpenbarService {
     return of(BOISSONS);
   }
 
-  getIsConnected(): boolean {
-    return this.isConnected;
-  }
-
   setIsConnected(value) {
     this.isConnected = value;
+  }
+
+  openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
   }
 
 }

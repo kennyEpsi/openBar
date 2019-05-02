@@ -15,6 +15,7 @@ export class BurgerComponent implements OnInit {
 
   ngOnInit() {
     this.getBurgers();
+    this.openBarService.setIsConnected(true);
   }
 
   getBurgers(): void {

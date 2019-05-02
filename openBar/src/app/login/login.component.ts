@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { NotifierService } from 'angular-notifier';
 import { OpenbarService } from '../openbar.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,17 +11,20 @@ import { OpenbarService } from '../openbar.service'
 })
 export class LoginComponent implements OnInit {
 
-  private notifier: NotifierService;
   connexionForm: FormGroup;
   username: FormControl;
   password: FormControl;
 
-  public constructor(notifier: NotifierService, private openBarService: OpenbarService) {
-    this.notifier = notifier;
+  public constructor(
+    private notifier: NotifierService,
+    private openBarService: OpenbarService,
+    private router: Router
+  ) {
   }
 
   ngOnInit() {
     this.createForm();
+    this.openBarService.setIsConnected(false);
   }
 
   createForm() {
@@ -34,6 +38,7 @@ export class LoginComponent implements OnInit {
     if ((this.connexionForm.value.username === "anthony" || "kenny" || "ludovic") && (this.connexionForm.value.password === "password")) {
       this.notifier.notify('success', 'Login successful !');
       this.openBarService.setIsConnected(true);
+      this.router.navigate(['/dashboard']);
     }
     else {
       this.notifier.notify('error', 'Username or Password is wrong !');
