@@ -1,15 +1,63 @@
 <div class="album py-5 bg-light">
+  <h2><strong>Soft :</strong></h2>
   <div class="container">
     <div class="row">
-      <div class="col-md-4" *ngFor="let boisson of boissons">
+      <div class="col-md-4" *ngFor="let soft of soft_drink">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top img-thumbnail" alt="{{boisson.img}}" style="min-height: 230px; width: 100%; display: block;"
-            src="{{boisson.img}}">
+          <img class="card-img-top img-thumbnail" alt="{{soft.name}}"
+            style="height: 400px; width: 100%; display: block;" src="{{soft.img}}">
           <div class="card-body">
-            <p class="card-text" style="text-align: justify;height: 100%; width: 100%;">{{boisson.description}}</p>
+            <h4 class="card-title" style="text-align: center"><strong>{{soft.name}}</strong></h4>
+            <p class="card-text" style="text-align: justify;height: 100%; width: 100%;">{{soft.description}}</p>
             <div class="card-footer" style="text-align: center">
               <span>
-                <strong>{{boisson.price}}€</strong>
+                <strong>{{soft.price}}€</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="album py-5 bg-light">
+  <h2><strong>Alcool :</strong></h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let alcohol of alcohol_drink">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top img-thumbnail" alt="{{alcohol.name}}"
+            style="height: 400px; width: 100%; display: block;" src="{{alcohol.img}}">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align: center"><strong>{{alcohol.name}}</strong></h4>
+            <p class="card-text" style="text-align: justify;height: 100%; width: 100%;">{{alcohol.description}}</p>
+            <div class="card-footer" style="text-align: center">
+              <span>
+                <strong>{{alcohol.price}}€</strong>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="album py-5 bg-light">
+  <h2><strong>Cocktail :</strong></h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let cocktail of cocktail_drink">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top img-thumbnail" alt="{{cocktail.name}}"
+            style="height: 400px; width: 100%; display: block;" src="{{cocktail.img}}">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align: center"><strong>{{cocktail.name}}</strong></h4>
+            <p class="card-text" style="text-align: justify;height: 100%; width: 100%;">{{cocktail.description}}</p>
+            <div class="card-footer" style="text-align: center">
+              <span>
+                <strong>{{cocktail.price}}€</strong>
               </span>
             </div>
           </div>

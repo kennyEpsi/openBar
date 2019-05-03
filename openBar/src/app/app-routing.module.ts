@@ -8,10 +8,12 @@ import { PizzaComponent } from './pizza/pizza.component';
 import { BurgerComponent } from './burger/burger.component';
 import { BoissonComponent } from './boisson/boisson.component';
 import { LoginComponent } from './login/login.component';
+import { ProfilComponent } from './profil/profil.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
+  { path: 'profil', component: ProfilComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'salades', component: SaladeComponent },
   { path: 'viandes', component: ViandeComponent },

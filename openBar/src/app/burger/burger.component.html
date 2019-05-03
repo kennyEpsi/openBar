@@ -3,9 +3,10 @@
     <div class="row">
       <div class="col-md-4" *ngFor="let burger of burgers">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top img-thumbnail" alt="{{burger.img}}" style="min-height: 230px; width: 100%; display: block;"
-            src="{{burger.img}}">
+          <img class="card-img-top img-thumbnail" alt="{{burger.name}}"
+            style="height: 300px; width: 100%; display: block;" src="{{burger.img}}">
           <div class="card-body">
+            <h4 class="card-title" style="text-align: center"><strong>{{burger.name}}</strong></h4>
             <p class="card-text" style="text-align: justify;height: 100%; width: 100%;">{{burger.description}}</p>
             <div class="card-footer" style="text-align: center">
               <span>

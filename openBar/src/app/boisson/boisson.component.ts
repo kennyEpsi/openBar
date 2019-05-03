@@ -9,16 +9,28 @@ import { OpenbarService } from '../openbar.service'
 })
 export class BoissonComponent implements OnInit {
 
-  boissons: Menu[];
+  soft_drink: Menu[];
+  alcohol_drink: Menu[];
+  cocktail_drink: Menu[];
 
   constructor(private openBarService: OpenbarService) { }
 
   ngOnInit() {
-    this.getBoissons();
+    this.getSoftDrink();
+    this.getAlcoholDrink();
+    this.getCocktailDrink();
     this.openBarService.setIsConnected(true);
   }
 
-  getBoissons(): void {
-    this.openBarService.getBoissons().subscribe(boissons => this.boissons = boissons);
+  getSoftDrink(): void {
+    this.openBarService.getSoftDrink().subscribe(soft_drink => this.soft_drink = soft_drink);
+  }
+
+  getAlcoholDrink(){
+    this.openBarService.getAlcoholDrink().subscribe(alcohol_drink => this.alcohol_drink = alcohol_drink);
+  }
+
+  getCocktailDrink(){
+    this.openBarService.getCocktailDrink().subscribe(cocktail_drink => this.cocktail_drink = cocktail_drink);
   }
 }

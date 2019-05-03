@@ -6,7 +6,9 @@ import { VIANDES } from './mock/mock-viande';
 import { POISSONS } from './mock/mock-poisson';
 import { BURGERS } from './mock/mock-burger';
 import { PIZZAS } from './mock/mock-pizza';
-import { BOISSONS } from './mock/mock-boisson';
+import { SOFT_DRINK } from './mock/mock-boisson';
+import { ALCOHOL_DRINK } from './mock/mock-boisson';
+import { COCKTAIL_DRINK } from './mock/mock-boisson';
 
 @Injectable({
   providedIn: 'root'
@@ -37,8 +39,16 @@ export class OpenbarService {
     return of(PIZZAS);
   }
 
-  getBoissons(): Observable<Menu[]> {
-    return of(BOISSONS);
+  getSoftDrink(): Observable<Menu[]> {
+    return of(SOFT_DRINK);
+  }
+
+  getAlcoholDrink(): Observable<Menu[]> {
+    return of(ALCOHOL_DRINK);
+  }
+
+  getCocktailDrink(): Observable<Menu[]> {
+    return of(COCKTAIL_DRINK);
   }
 
   setIsConnected(value) {

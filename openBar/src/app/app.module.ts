@@ -13,6 +13,7 @@ import { PizzaComponent } from './pizza/pizza.component';
 import { ViandeComponent } from './viande/viande.component';
 import { PoissonComponent } from './poisson/poisson.component';
 import { BoissonComponent } from './boisson/boisson.component';
+import { ProfilComponent } from './profil/profil.component';
 
 
 const customNotifierOptions: NotifierOptions = {
@@ -67,7 +68,8 @@ const customNotifierOptions: NotifierOptions = {
     PizzaComponent,
     ViandeComponent,
     PoissonComponent,
-    BoissonComponent
+    BoissonComponent,
+    ProfilComponent
   ],
   imports: [
     BrowserModule,

@@ -1,46 +1,136 @@
 import { Menu } from '../menu';
 
-export const BOISSONS : Menu[] = [
-    // {
-    //     id: 1,
-    //     name: 'Salade Caesar',
-    //     description: 'La salade César est une salade principalement composée de laitue romaine, de parmesan, d\'œufs durs et de croûtons, arrosée de sa « sauce César » faite de parmesan râpé, d\'huile d\'olive, de pâte d\'anchois, d\'ail, de vinaigre de vin, de moutarde et d\'un jaune d\'œuf.',
-    //     price: 14.99,
-    //     img: './assets/img/salade/salade_caesar.jpeg',
-    // },
-    // {
-    //     id: 2,
-    //     name: 'Salade Grecque',
-    //     description: 'La salade Grecque est composée de : tomates, concombre (nature), huile d\'olive, origan et sel. Elle est éventuellement enrichie avec de la feta, des olives, de l\'oignon, du poivron vert et parfois, des câpres et éventuellement leurs feuilles, du vinaigre et du persil pour la décoration.',
-    //     price: 9.99,
-    //     img: './assets/img/salade/salade_grecque.jpg',
-    // },
-    // {
-    //     id: 3,
-    //     name: 'Salade Lyonnaise',
-    //     description: 'La salade Lyonnaise est composée de feuilles de salade verte, salade frisée, mâche ou dents de lion (variété de pissenlit), des lardons fumés frits ou des foies de volaille, des croûtons de pain sec dorés, un œuf poché ou œuf mollet, sauce vinaigrette (huile de noix, vinaigre balsamique ou de vin...), du persil',
-    //     price: 12.99,
-    //     img: './assets/img/salade/salade_lyonnaise.jpg',
-    // },
-    // {
-    //     id: 4,
-    //     name: 'Salade Niçoise',
-    //     description: 'La salade Niçoise est composée de tomates, poivrons verts « corne de bœuf », ail, oignons rouges ou cébettes, fèvettes, céleri, petits artichauts violets, concombres, œufs durs, filets d\'anchois (à l\'huile d\'olive ou salés) ou thon au naturel, olives noires niçoises, et huile d\'olive.',
-    //     price: 9,
-    //     img: './assets/img/salade/salade_nicoise.jpg',
-    // },
-    // {
-    //     id: 5,
-    //     name: 'Salade Périgourdine',
-    //     description: 'La salade Périgourdine est composée de quelques feuilles de salade frisée, feuille de chêne, pourpier ou mâche, rondelles de pommes de terre, haricots vert, tomates en tranche ou tomates cerises,confit de canard,gésiers de canard frais ou confits,magret de canard séché émincé,jambon cru en tranche,foie gras de canard,décoration avec des croûtons, maïs, œuf de caille, noix, pignons, raisins blancs secs, lardons, champignons,assaisonnement: huile de noix, vinaigre balsamique, de xérès ou de framboise, moutarde traditionnelle ou à l\'ancienne, sel et poivre.',
-    //     price: 8,
-    //     img: './assets/img/salade/salade_perigourdine.jpg',
-    // },
-    // {
-    //     id: 6,
-    //     name: 'Salade Chèvre chaud',
-    //     description: 'La salade Chèvre chaud est composée de quelques feuilles de salade frisée, lardons fumés, quelques cerneaux de noix, du fromage de chèvre, une baguette, assaisonnement: huile d\'olive, vinaigre balsamique',
-    //     price: 10,
-    //     img: './assets/img/salade/salade_chevre_chaud.jpg',
-    // }
+export const SOFT_DRINK: Menu[] = [
+    {
+        id: 1,
+        name: 'Coca-Cola',
+        description: '',
+        price: 2.50,
+        img: './assets/img/boisson/soft/coca.jpg',
+    },
+    {
+        id: 2,
+        name: 'Orangina',
+        description: '',
+        price: 2.50,
+        img: './assets/img/boisson/soft/orangina.jpg',
+    },
+    {
+        id: 3,
+        name: 'Ice Tea',
+        description: '',
+        price: 2.50,
+        img: './assets/img/boisson/soft/ice_tea.jpg',
+    },
+    {
+        id: 4,
+        name: 'Jus de fruit',
+        description: '',
+        price: 2.50,
+        img: './assets/img/boisson/soft/jus_de_fruit.jpg',
+    },
+    {
+        id: 5,
+        name: 'Schweppes',
+        description: '',
+        price: 2.50,
+        img: './assets/img/boisson/soft/schweppes.jpg',
+    },
+    {
+        id: 6,
+        name: 'Oasis',
+        description: '',
+        price: 2.50,
+        img: './assets/img/boisson/soft/oasis.jpg',
+    }
+];
+
+export const ALCOHOL_DRINK: Menu[] = [
+    {
+        id: 7,
+        name: 'Whisky',
+        description: '',
+        price: 4.90,
+        img: './assets/img/boisson/alcool/whisky.jpg',
+    },
+    {
+        id: 8,
+        name: 'Vodka',
+        description: '',
+        price: 4.90,
+        img: './assets/img/boisson/alcool/vodka.jpg',
+    },
+    {
+        id: 9,
+        name: 'Rhum',
+        description: '',
+        price: 3.90,
+        img: './assets/img/boisson/alcool/rhum.jpg',
+    },
+    {
+        id: 10,
+        name: 'Get 27',
+        description: '',
+        price: 3.50,
+        img: './assets/img/boisson/alcool/get.jpg',
+    },
+    {
+        id: 11,
+        name: 'Vin',
+        description: '',
+        price: 3,
+        img: './assets/img/boisson/alcool/vin.jpg',
+    },
+    {
+        id: 12,
+        name: 'Champagne',
+        description: '',
+        price: 4,
+        img: './assets/img/boisson/alcool/champagne.jpg',
+    }
+];
+
+export const COCKTAIL_DRINK: Menu[] = [
+    {
+        id: 13,
+        name: 'Mojito',
+        description: '',
+        price: 5.6,
+        img: './assets/img/boisson/cocktail/mojito.jpg',
+    },
+    {
+        id: 14,
+        name: 'Tequila Sunrise',
+        description: '',
+        price: 6,
+        img: './assets/img/boisson/cocktail/tequila_sunrise.jpg',
+    },
+    {
+        id: 15,
+        name: 'Piña Colada',
+        description: '',
+        price: 4.5,
+        img: './assets/img/boisson/cocktail/pina_colada.jpg',
+    },
+    {
+        id: 16,
+        name: 'Cuba Libre',
+        description: '',
+        price: 5.8,
+        img: './assets/img/boisson/cocktail/cuba_libre.jpg',
+    },
+    {
+        id: 17,
+        name: 'Sex on the Beach',
+        description: '',
+        price: 6.5,
+        img: './assets/img/boisson/cocktail/sex_on_the_beach.jpg',
+    },
+    {
+        id: 18,
+        name: 'Kir Royal',
+        description: '',
+        price: 7,
+        img: './assets/img/boisson/cocktail/kir_royal.jpg',
+    }
 ];

@@ -1,8 +1,9 @@
-<header>
-    <nav class="navbar navbar-light bg-white navbar-1">
+<header style="padding-bottom:61px">
+    <nav class="navbar fixed-top navbar-light bg-white navbar-1">
         <div id="mySidenav" class="sidenav">
             <a class="closebtn" (click)="closeNav()">&times;</a>
-            <a routerLink="/dashboard" (click)="openBarService.closeNav()"><i class="fas fa-user-circle"></i> Profil</a>
+            <a routerLink="/dashboard" (click)="openBarService.closeNav()"><i class="fas fa-home"></i> Accueil</a>
+            <a routerLink="/profil" (click)="openBarService.closeNav()"><i class="fas fa-user-circle"></i> Profil</a>
             <a routerLink="/pizzas" (click)="openBarService.closeNav()"><i class="fas fa-pizza-slice"></i> Pizza</a>
             <a routerLink="/burgers" (click)="openBarService.closeNav()"><i class="fas fa-hamburger"></i> Burger</a>
             <a routerLink="/salades" (click)="openBarService.closeNav()"><i class="fas fa-salad"></i> Salade</a>
@@ -17,5 +18,7 @@
                 (click)="logOut()"></i></a>
     </nav>
 </header>
-<router-outlet></router-outlet>
+<main role="main" class="container" style="height: calc(100%-61px)">
+    <router-outlet></router-outlet>
+</main>
 <notifier-container></notifier-container>
