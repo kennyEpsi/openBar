@@ -40,7 +40,7 @@ export const POISSONS: Menu[] = [
         id: 6,
         name: 'Gambas flambée au cognac',
         description: '',
-        price: 25,
+        price: 17,
         img: './assets/img/poisson/gambas_flambee.jpg',
     }
 ];
