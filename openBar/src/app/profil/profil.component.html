@@ -1,0 +1,147 @@
+<div class="container mt-3">
+    <div class="row flex-lg-nowrap">
+        <div class="col">
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="e-profile">
+                                <div class="row">
+                                    <div class="col-12 col-sm-auto mb-3">
+                                        <div class="mx-auto" style="width: 140px;">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <img class="rounded-circle img-responsive mt-2"
+                                                    src="../../assets/img/avatar.png" width="128" height="128">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex flex-column flex-sm-row justify-content-between mb-3">
+                                        <div class="text-center text-sm-left mb-2 mb-sm-0">
+                                            <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">Kenny Robert</h4>
+                                            <p class="mb-0">@kenny.r</p>
+                                        </div>
+                                        <div class="text-center text-sm-right">
+                                            <span class="badge badge-secondary">client</span>
+                                            <div class="text-muted"><small>Inscrit depuis le 30 Mai 2019</small></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content pt-3">
+                                    <div class="tab-pane active">
+                                        <form class="form" novalidate="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="form-group">
+                                                                <label>Nom complet</label>
+                                                                <input class="form-control" type="text" name="name"
+                                                                    placeholder="nom complet" value="Kenny Robert">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="form-group">
+                                                                <label>Username</label>
+                                                                <input class="form-control" type="text" name="username"
+                                                                    placeholder="username" value="kenny.r">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="form-group">
+                                                                <label>Email</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="email" value="kenny.robert@epsi.fr">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col mb-3">
+                                                            <div class="form-group">
+                                                                <label>A propos</label>
+                                                                <textarea class="form-control" rows="5"
+                                                                    placeholder="à propos">Etudiant à l'EPSI Lyon </textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 mb-3">
+                                                    <div class="mb-2"><b>Changement mot de passe</b></div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="form-group">
+                                                                <label>Mot de passe actuel</label>
+                                                                <input class="form-control" type="password"
+                                                                    placeholder="••••••">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="form-group">
+                                                                <label>Nouveau mot de passe</label>
+                                                                <input class="form-control" type="password"
+                                                                    placeholder="••••••">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="form-group">
+                                                                <label>Confirmer <span class="d-none d-xl-inline">mot de
+                                                                        passe</span></label>
+                                                                <input class="form-control" type="password"
+                                                                    placeholder="••••••"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-5 offset-sm-1 mb-3">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <label>Email Notifications</label>
+                                                            <div class="custom-controls-stacked px-2">
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input"
+                                                                        id="notifications-blog" checked="">
+                                                                    <label class="custom-control-label"
+                                                                        for="notifications-blog">Blog posts</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input"
+                                                                        id="notifications-news" checked="">
+                                                                    <label class="custom-control-label"
+                                                                        for="notifications-news">Newsletter</label>
+                                                                </div>
+                                                                <div class="custom-control custom-checkbox">
+                                                                    <input type="checkbox" class="custom-control-input"
+                                                                        id="notifications-offers" checked="">
+                                                                    <label class="custom-control-label"
+                                                                        for="notifications-offers">Offres
+                                                                        personnelles</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col d-flex justify-content-end">
+                                                    <button routerLink="/dashboard" class="btn btn-primary" type="submit">Sauvegarder</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
