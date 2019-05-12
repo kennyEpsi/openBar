@@ -14,6 +14,7 @@ import { ViandeComponent } from './viande/viande.component';
 import { PoissonComponent } from './poisson/poisson.component';
 import { BoissonComponent } from './boisson/boisson.component';
 import { ProfilComponent } from './profil/profil.component';
+import { GaugeChartModule } from 'angular-gauge-chart'
 
 
 const customNotifierOptions: NotifierOptions = {
@@ -30,7 +31,7 @@ const customNotifierOptions: NotifierOptions = {
   },
   theme: 'material',
   behaviour: {
-    autoHide: 2000,
+    autoHide: 3000,
     onClick: 'hide',
     onMouseover: 'pauseAutoHide',
     showDismissButton: true,
@@ -57,7 +58,6 @@ const customNotifierOptions: NotifierOptions = {
   }
 };
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,7 +76,8 @@ const customNotifierOptions: NotifierOptions = {
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    NotifierModule.withConfig(customNotifierOptions)
+    NotifierModule.withConfig(customNotifierOptions),
+    GaugeChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
